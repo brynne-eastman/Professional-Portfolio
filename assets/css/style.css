@@ -126,7 +126,7 @@ header nav ul li a {
 
 
  .horiseon, .run-buddy  {
-    height: 720px;
+    height: 700px;
     width: auto;
     display: flex;
     flex-wrap: wrap;
@@ -141,6 +141,8 @@ header nav ul li a {
 
 .run-buddy {
     width: 400px;
+    display: inline-block;
+    flex-wrap: wrap;
     
         
 }
