@@ -7,4 +7,4 @@ Create a portfolio from scratch: html.index, style.ccc, and a README file
 https://brynne-eastman.github.io/Professional-Portfolio/
 
 ### Screenshot
-![screenshot](./assets/images/Professional-Portfolio-Challenge.png)
+![screenshot](./assets/images/screenshot-porfolio.png)
