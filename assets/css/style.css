@@ -94,7 +94,7 @@ header nav ul li a {
 .about-me img {
     height: 400px;
     padding-top: 20px;
-    padding-left: 275px;
+    padding-left: 100px;
 }
 
 .about-me p {
@@ -125,7 +125,8 @@ header nav ul li a {
 }
 
 
-.ytg, .horiseon, .run-buddy {
+.horiseon  {
+    height: 700px;
     width: auto;
     display: flex;
     flex-wrap: wrap;
@@ -138,14 +139,13 @@ header nav ul li a {
     
 }
 
-.horiseon, .run-buddy {
-    height: 700px;
+.run-buddy {
+    width: 300px;
+    height:725px;
+        
+
 }
 
-.ytg {
-    height: 600px;
-    
-}
 
 .contact-info {
     background: var(--primary-color);
