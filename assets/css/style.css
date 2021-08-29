@@ -3,9 +3,7 @@
     --secondary-color: #668a70;
     --tertiary-color: #e6ab9a;
     --quaternary-color: #e8e6d3;
-
 }
-
 
 * {
     margin: 0;
@@ -19,11 +17,8 @@ header {
     display: flex;
     justify-content:space-between;
     flex-wrap: wrap;
-    margin: 0; 
-    background-attachment: fixed;
-    z-index: 9999;
-    position: -webkit-sticky;
-    position: sticky;
+    
+    
 }
 
 header a {
@@ -41,7 +36,6 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
 
@@ -55,7 +49,7 @@ header nav ul li a {
 .hero {
     background-image: url("../images/desert.jpg");
     background-size: cover;
-    background-position: 81%;
+    background-position: 70%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -64,16 +58,16 @@ header nav ul li a {
     
 }
 
-.hero-cta h1, .eastman {
+.hero h1, .eastman {
     margin-top: 350px;
     font-size: 100px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 
-.hero-cta h1 {
+.hero h1 {
     font-weight: 100;
-    color: #e8e6d3;
+    color: var(--quaternary-color);
 }
 
 .eastman {
@@ -81,43 +75,43 @@ header nav ul li a {
     color: var(--tertiary-color);
 }
 
-.about-me {
-    background: var(--secondary-color);
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding-top: 20px;
-    }
-
-
-.about-me h2 {
+.about-me h2, .projects h2, .contact-info h2 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     color: var(--quaternary-color);
     font-size: 35px;
-    padding-right: 10px;
+    text-align: left;
+    padding-bottom: 10px;
 }
+
+.about-me {
+    background: var(--secondary-color);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
 
 .about-me img {
-    height: 600px;
-    padding-left: 800px;
-    margin-top: 30px;
+    height: 400px;
+    padding-top: 20px;
+    padding-left: 100px;
 }
 
-.hello p{
+.about-me p {
     color: var(--quaternary-color);
-    width: 35%;
     font-size: 20px;
     line-height: 1.2;
-    position:relative;
-    bottom: 450px;
-    text-align: left;
-    margin-right: 25px;
-    padding-right: 40px;
+    text-align: center;
+    padding-top: 100px;
+    
 }
 
-.hello::first-line {
+.about-me img, .about-me p {
+    display: inline-block;
+    align-items: center;
+}
+
+.about-me p::first-line {
     font-size: x-large;
     font-weight: 900;
 }
@@ -126,28 +120,31 @@ header nav ul li a {
     background: var(--tertiary-color);
     margin: 0 auto;
     padding: 20px;
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-start;
+    
 }
 
-.projects h2 {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-    color: var(--quaternary-color);
-    font-size: 35px;
+
+.ytg, .horiseon, .run-buddy {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    display: inline-block;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    
 }
 
-.ytg img {
-    width: 500px;
+.horiseon, .run-buddy {
+    height: 700px;
+}
+
+.ytg {
     height: 600px;
-    flex: 1;
-}
-
-.horiseon img {
-    width: 500px;
-    height: 600px;
-    flex: 1;
+    
 }
 
 .contact-info {
@@ -161,14 +158,77 @@ header nav ul li a {
     list-style: none;
 }
 
-.contact-info h2 {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-    color: var(--quaternary-color);
-    font-size: 35px;
-    padding-bottom: 15px;
-}
-
 .contact-info li {
     color: var(--quaternary-color);
-    font-size: 20px;
+    font-size: 25px;
  }
+
+ /*  MEDIA QUERY FOR TABLES AND SMALLER */
+@media screen and (max-width: 980px) {
+ header {
+    padding-bottom: 0;
+    position: relative;
+    justify-content: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  header nav ul li a {
+    font-size: 40px;
+  }
+
+  .about-me img, .about-me p {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+      
+  }
+  
+  .about-me img {
+      padding-left: 175px;
+      
+  }
+
+  .about-me p {
+    padding-left: 65px;
+    font-size: 20px;
+  }
+
+}
+.ytg, .horiseon, .run-buddy {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+
+  /*  MEDIA QUERY FOR TABLES AND SMALLER */
+@media screen and (max-width: 768px) {
+    .about-me h2, .projects h2, .contact-info h2 {
+        text-align: left;
+    }
+
+    
+
+    
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .contact-info li {
+        font-size: 25px;
+    }
+
+
+
+
+
+}    
