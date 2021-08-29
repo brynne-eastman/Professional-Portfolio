@@ -1,7 +1,9 @@
 :root {
-    --primary-color:#fee6b6;
-    --secondary-color: #708238;
+    --primary-color:#e07655;
+    --secondary-color: #668a70;
     --tertiary-color: #e6ab9a;
+    --quaternary-color: #e8e6d3;
+
 }
 
 
@@ -15,19 +17,24 @@ header {
     padding: 20px 35px;
     background-color: var(--primary-color);
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    
+    margin: 0; 
     background-attachment: fixed;
     z-index: 9999;
+    position: -webkit-sticky;
+    position: sticky;
 }
 
 header a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--quaternary-color);
+}
+
+a:hover {
+    text-shadow: 1px 1px var(--tertiary-color);
+    font-weight: 900;
+    list-style-type: none;
 }
 
 header nav ul {
@@ -49,11 +56,119 @@ header nav ul li a {
     background-image: url("../images/desert.jpg");
     background-size: cover;
     background-position: 81%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 900px;
+    
+}
+
+.hero-cta h1, .eastman {
+    margin-top: 350px;
+    font-size: 100px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.hero-cta h1 {
+    font-weight: 100;
+    color: #e8e6d3;
+}
+
+.eastman {
+    font-weight: 900;
+    color: var(--tertiary-color);
+}
+
+.about-me {
+    background: var(--secondary-color);
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-    
+    padding-top: 20px;
+    }
+
+
+.about-me h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    color: var(--quaternary-color);
+    font-size: 35px;
+    padding-right: 10px;
 }
 
+.about-me img {
+    height: 600px;
+    padding-left: 800px;
+    margin-top: 30px;
+}
+
+.hello p{
+    color: var(--quaternary-color);
+    width: 35%;
+    font-size: 20px;
+    line-height: 1.2;
+    position:relative;
+    bottom: 450px;
+    text-align: left;
+    margin-right: 25px;
+    padding-right: 40px;
+}
+
+.hello::first-line {
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.projects {
+    background: var(--tertiary-color);
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.projects h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    color: var(--quaternary-color);
+    font-size: 35px;
+}
+
+.ytg img {
+    width: 500px;
+    height: 600px;
+    flex: 1;
+}
+
+.horiseon img {
+    width: 500px;
+    height: 600px;
+    flex: 1;
+}
+
+.contact-info {
+    background: var(--primary-color);
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.contact-info h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    color: var(--quaternary-color);
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+.contact-info li {
+    color: var(--quaternary-color);
+    font-size: 20px;
+ }
