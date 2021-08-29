@@ -1,7 +1,7 @@
 # Challenge 2: Profession-Portfolio
 
 ## Description: 
-Create a portfolio from scratch: html.index, style.ccc, and a README file
+Using advanced CSS techniques, create a professional portfolio from scratch.
 
 ### Website Link
 
