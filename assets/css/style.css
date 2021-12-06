@@ -142,7 +142,8 @@ img.run-buddy {
 
 
 img.workDayScheduler, 
-img.tuneItUp {
+img.tuneItUp,
+img.cut-the-deck {
     width: 400px;
     height: auto;
     display: inline-block;
