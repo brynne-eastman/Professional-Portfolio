@@ -143,7 +143,8 @@ img.run-buddy {
 
 img.workDayScheduler, 
 img.tuneItUp,
-img.cutTheDeck {
+img.budgetTracker,
+img.codeQuiz {
     width: 400px;
     height: auto;
     display: inline-block;
