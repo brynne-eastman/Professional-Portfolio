@@ -41,7 +41,7 @@ No need for installation.  Click on the link below to view portfolio
 
 
 ### Website Link
-[Click here to view portfolio](https://brynne-eastman.github.io/Professional-Portfolio/)
+[Click here to view portfolio](https://brynne-eastman.github.io/professional-portfolio/)
 
 ### Screengrab
 ![screenshot](./assets/images/screenshot-portfolio.png)
