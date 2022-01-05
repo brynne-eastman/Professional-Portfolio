@@ -7,7 +7,6 @@ Using advanced CSS techniques, create a professional portfolio from scratch.
 * [User Story](#userStory)
 * [Acceptance Criteria](#acceptanceCriteria)
 * [Installation](*installation)
-* [Usage](#usage)
 * [Website Links](#websiteLinks)
 * [Screengrab](#screengrab)
 * [Languages](#languages)
