@@ -11,7 +11,6 @@ Using advanced CSS techniques, create a professional portfolio from scratch.
 * [Website Links](#websiteLinks)
 * [Screengrab](#screengrab)
 * [Languages](#languages)
-* [License](#license)
 * [Questions](questions)
 
 ### User Story
@@ -52,8 +51,6 @@ No need for installation.  Click on the link below to view portfolio
 - HTML
 - CSS 
 
-### License
-MIT
 
 ### Questions
 If you have any questions about this application, please contact me at brynne.eastman@gmail.com. You can also view more applications at https://github.com/brynne-eastman.
